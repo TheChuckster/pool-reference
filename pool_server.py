@@ -57,14 +57,14 @@ class PoolServer:
 
     async def get_pool_info(self, _):
         res: PoolInfo = PoolInfo(
-            "The Reference Pool",
-            "https://www.chia.net/img/chia_logo.svg",
+            "Terracotta Pool",
+            "https://www.terracotta.network/static/img/terracotta.svg",
             uint64(self.pool.min_difficulty),
             uint64(self.pool.max_difficulty),
             uint64(self.pool.relative_lock_height),
             "1.0.0",
             str(self.pool.pool_fee),
-            "(example) The Reference Pool allows you to pool with low fees, paying out daily using Chia.",
+            "Terracotta Pool allows you to pool with low fees, paying out daily using Chia.",
         )
         return res
 

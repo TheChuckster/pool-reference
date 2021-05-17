@@ -59,7 +59,7 @@ class Pool:
         self.relative_lock_height = uint32(100)
 
         # TODO: potentially tweak these numbers for security and performance
-        self.pool_url = "https://myreferencepool.com"
+        self.pool_url = "https://terracotta.network"
         self.min_difficulty = uint64(100)  # 100 difficulty is about 1 proof a day per plot
         self.default_difficulty: uint64 = uint64(100)
         self.max_difficulty = uint64(1000)
@@ -74,7 +74,7 @@ class Pool:
         # This is where the block rewards will get paid out to. The pool needs to support this address forever,
         # since the farmers will encode it into their singleton on the blockchain.
         self.default_pool_puzzle_hash: bytes32 = decode_puzzle_hash(
-            "xch12ma5m7sezasgh95wkyr8470ngryec27jxcvxcmsmc4ghy7c4njssnn623q"
+            "xch1eqynlzmcthpw9s4qpnvvmgdh633xqallaqscetkprw4rac9haupsy4k6s5"
         )
 
         # We need to check for slow farmers. If farmers cannot submit proofs in time, they won't be able to win
