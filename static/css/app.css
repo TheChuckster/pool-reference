@@ -11362,8 +11362,9 @@ p {
   font-weight: 300;
   line-height: 62px;
   height: 62px;
-  width: 133px;
-  background-image: url("../img/logo.png");
+  width: 150px;
+  background-image: url("../../static/img/terracotta_horizontal.svg");
+  background-size: auto 60px;
   background-repeat: no-repeat;
   background-position: 0 center;
   margin-right: 45px;
@@ -11375,8 +11376,8 @@ p {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .mai-top-header .navbar-brand {
-    background-image: url("../img/logo-2x.png");
-    background-size: 133px 20px;
+    background-image: url("../../static/img/terracotta_horizontal.svg");
+    background-size: auto 20px;
   }
 }
 
